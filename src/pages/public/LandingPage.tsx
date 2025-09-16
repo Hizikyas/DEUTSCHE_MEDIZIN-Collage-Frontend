@@ -138,83 +138,7 @@ export default function LandingPage() {
             <ChevronUpIcon className="h-6 w-6" />
           </button>
         )}
-        {/* <header className=" top-0 left-0 w-full bg-white dark:bg-gray-900 shadow z-50">
-          <div className="container mx-auto px-4 py-4 flex justify-between items-center relative">
-            <div className="flex items-center space-x-3">
-              <div className="w-12 rounded-full   rounded-lg flex items-center justify-center">
-                <img
-                  src="/assets/companylogo.jpg"
-                  className="h-[50px] w-full rounded-full "
-                />
-              </div>
-            </div>
-
-            <nav className=" shadow  w-full z-50">
-              <ul className="flex gap-30 justify-center space-x-8 p-4">
-                <li
-                  className="w-8 h-8"
-                  // onMouseEnter={() => homeRef.current.play()}
-                  // onMouseLeave={() => homeRef.current.stop()}
-                >
-                  <a href="#home">
-                    <Lottie
-                      // lottieRef={homeRef}
-                      animationData={home}
-                      loop={true}
-                      autoplay={true}
-                    />
-                  </a>
-                </li>
-                <li
-                  className="w-8 h-8"
-                  // onMouseEnter={() => homeRef.current.play()}
-                  // onMouseLeave={() => homeRef.current.stop()}
-                >
-                  <a href="#mission">
-                    <Lottie
-                      // lottieRef={homeRef}
-                      animationData={phone}
-                      loop={true}
-                      autoplay={true}
-                    />
-                  </a>
-                </li>
-                <li
-                  className="w-8 h-8"
-                  // onMouseEnter={() => homeRef.current.play()}
-                  // onMouseLeave={() => homeRef.current.stop()}
-                >
-                  <a href="#hero">
-                    <Lottie
-                      // lottieRef={homeRef}
-                      animationData={register}
-                      loop={true}
-                      autoplay={true}
-                    />
-                  </a>
-                </li>
-                <li className="w-8 h-8">
-                  <a href="#contact">
-                    <Lottie
-                      // lottieRef={homeRef}
-                      animationData={calling}
-                      loop={true}
-                      autoplay={true}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
-            <div className=" md:flex items-center z-50 space-x-4">
-              <LanguageSwitcher />
-              <ThemeToggle />
-              <Link to="/login">
-                <Button variant="outline">{t("auth:login")}</Button>
-              </Link>
-            </div>
-          </div>
-        </header> */}
+      
 
         <header className="fixed top-0 left-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg z-50">
           <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -226,7 +150,8 @@ export default function LandingPage() {
                 className="h-10 w-10 rounded-full object-cover shadow-sm"
               />
               <span className="text-lg font-bold text-gray-800 dark:text-gray-100">
-                DEUTSCHE HOCHSCHULE
+                DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
+
               </span>
             </div>
 
@@ -362,7 +287,8 @@ export default function LandingPage() {
               In the city of Bahirdar
             </p>
             <h2 className="text-4xl mb-4 bg-gradient-to-r from-blue-900 to-blue-200 px-4 py-2 rounded font-serif">
-              <span className="font-bold">DEUTSCHE HOCHSCHULE</span> MEDICIN
+              <span className="font-bold">DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
+</span> MEDICIN
               COLLEGE
             </h2>
 
@@ -373,7 +299,8 @@ export default function LandingPage() {
           <div className="absolute left-0 right-0 bottom-0 mx-auto mb-[-40px] max-w-3xl bg-white bg-white/40 backdrop-blur-md rounded-lg p-6 shadow-lg">
             <p className="text-sm font-semibold text-blue-900 mb-1">About us</p>
             <h2 className="text-xl font-bold uppercase text-blue-600 leading-tight">
-              DEUTSCHE HOCHSCHULE <br />
+              DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
+ <br />
               MEDICIN COLLEGE BAHIRDAR
             </h2>
           </div>
@@ -472,86 +399,7 @@ export default function LandingPage() {
             </motion.div>
           </div>
         </section>
-        {/* <section className="container mx-auto px-6 py-24">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={infoView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-            >
-              <h2 className="text-4xl md:text-5xl font-serif text-blue-600 dark:text-blue-400 mb-6">
-                Doche College at a Glance
-              </h2>
-              <p className="text-lg md:text-xl font-sans dark:text-gray-200 text-gray-800 mb-6">
-                For nearly four centuries, people have come to Doche College in
-                pursuit of knowledge, truth, and the betterment of society.
-              </p>
-              <motion.img
-                src="/assets/library.JPG"
-                alt="College Library"
-                className="rounded-3xl shadow-2xl w-full object-cover cursor-pointer hover:scale-105 transition-transform duration-500"
-                whileHover={{ scale: 1.05 }}
-              />
-            </motion.div>
-
-            <motion.div
-              className="flex flex-col gap-10"
-              initial={{ opacity: 0, x: -100 }}
-              animate={
-                infoView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
-              }
-              transition={{ duration: 1.5, ease: "easeOut" }}
-            >
-              <motion.div
-                className="bg-blue-50 dark:bg-slate-900 rounded-2xl p-6 shadow-lg"
-                initial={{ opacity: 0, y: -50 }}
-                animate={
-                  infoView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }
-                }
-                transition={{ duration: 1.2, ease: "easeOut" }}
-              >
-                <h3 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-                  <CountUp end={2017} duration={2} />
-                </h3>
-                <p className="font-sans dark:text-gray-200 text-gray-700 text-lg">
-                  The year Doche was founded
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-blue-50 dark:bg-slate-900 rounded-2xl p-6 shadow-lg"
-                initial={{ opacity: 0, y: 50 }}
-                animate={
-                  infoView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-                }
-                transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-              >
-                <h3 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-                  <CountUp end={1240} duration={2} />
-                </h3>
-                <p className="font-sans dark:text-gray-200 text-gray-700 text-lg">
-                  Undergraduate & graduate students in 2023-24
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="bg-blue-50 dark:bg-slate-900 rounded-2xl p-6 shadow-lg"
-                initial={{ opacity: 0, y: 50 }}
-                animate={
-                  infoView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-                }
-                transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-              >
-                <h3 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-                  <CountUp end={850} duration={2} />
-                </h3>
-                <p className="font-sans dark:text-gray-200 text-gray-700 text-lg">
-                  Staff members currently engaged
-                </p>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section> */}
+       
         <section className="mx-4 sm:mx-20 my-10">
           <div
             ref={infoRef}
@@ -564,11 +412,11 @@ export default function LandingPage() {
             >
               <div>
                 <h2 className="text-4xl text-blue-500 dark:text-blue-300 font-serif">
-                  Doche College at glance
+                DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
+                College at glance
                 </h2>
                 <p className="text-lg dark:text-white text-black font-poppins mb-4">
-                  For nearly five years, people have come to Douche in the
-                  pursuit of truth, knowledge, and the betterment of society.
+                For nearly seven years, people have come to Deutsche Hochschule für Medizin College (DHM) in the pursuit of truth, knowledge, and the betterment of society.
                 </p>
                 {/* ✅ Make the image responsive */}
                 <img
@@ -599,7 +447,8 @@ export default function LandingPage() {
                   2017{" "}
                 </h2>
                 <p className="text-lg dark:text-white text-black font-mono">
-                  The year Douche was founded
+                  The year DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
+                  was founded
                 </p>
               </motion.div>
 
@@ -1267,7 +1116,8 @@ export default function LandingPage() {
               </div>
               <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>
-                  &copy; 2024 Deutsche Hochschule für Medizin College. All
+                  &copy; 2024 DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
+ für Medizin College. All
                   rights reserved.
                 </p>
               </div>

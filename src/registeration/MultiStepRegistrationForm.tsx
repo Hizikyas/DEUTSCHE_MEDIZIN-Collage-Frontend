@@ -2288,11 +2288,8 @@ const MultiStepRegistrationForm = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-              DEUTSCHE HOCHSCHULE
+              DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
             </h1>
-            <p className="text-sm text-gray-600  dark:text-gray-300">
-              medicin college
-            </p>
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -2536,7 +2533,7 @@ const MultiStepRegistrationForm = () => {
               </div>
               <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>
-                  &copy; 2024 Deutsche Hochschule für Medizin College. All
+                  &copy; 2024 DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE. All
                   rights reserved.
                 </p>
               </div>
