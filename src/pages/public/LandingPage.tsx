@@ -412,8 +412,7 @@ export default function LandingPage() {
             >
               <div>
                 <h2 className="text-4xl text-blue-500 dark:text-blue-300 font-serif">
-                DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
-                College at glance
+                DHM at glance
                 </h2>
                 <p className="text-lg dark:text-white text-black font-poppins mb-4">
                 For nearly seven years, people have come to Deutsche Hochschule für Medizin College (DHM) in the pursuit of truth, knowledge, and the betterment of society.
@@ -447,8 +446,7 @@ export default function LandingPage() {
                   2017{" "}
                 </h2>
                 <p className="text-lg dark:text-white text-black font-mono">
-                  The year DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
-                  was founded
+                  The year DHM was founded
                 </p>
               </motion.div>
 
@@ -480,86 +478,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* <section className="container   px-6 py-24">
-          <div className="grid mx-10 lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={infoView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-            >
-              <h2 className="text-4xl md:text-5xl font-serif text-blue-600 dark:text-blue-400 mb-6">
-                Doche College at a Glance
-              </h2>
-              <p className="text-lg md:text-xl font-sans dark:text-gray-200 text-gray-800 mb-6">
-                For nearly four years, people have come to Doche College in
-                pursuit of knowledge, truth, and the betterment of society.
-              </p>
-              <motion.img
-                src="/assets/collegephoto.jpg"
-                alt="College Library"
-                className="rounded-3xl shadow-2xl w-full object-cover cursor-pointer hover:scale-105 transition-transform duration-500"
-                whileHover={{ scale: 1.05 }}
-              />
-            </motion.div>
-
-            <motion.div
-              className="flex flex-col gap-10"
-              initial={{ opacity: 0, x: -100 }}
-              animate={
-                infoView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
-              }
-              transition={{ duration: 1.5, ease: "easeOut" }}
-            >
-              <motion.div
-                className=""
-                initial={{ opacity: 0, y: -50 }}
-                animate={
-                  infoView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }
-                }
-                transition={{ duration: 1.2, ease: "easeOut" }}
-              >
-                <h3 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-                  <CountUp end={2017} duration={2} />
-                </h3>
-                <p className="font-sans dark:text-gray-200 text-gray-700 text-lg">
-                  The year Doche was founded
-                </p>
-              </motion.div>
-
-              <motion.div
-                className=""
-                initial={{ opacity: 0, y: 50 }}
-                animate={
-                  infoView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-                }
-                transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-              >
-                <h3 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-                  <CountUp end={1240} duration={2} />
-                </h3>
-                <p className="font-sans dark:text-gray-200 text-gray-700 text-lg">
-                  Undergraduate & graduate students in 2023-24
-                </p>
-              </motion.div>
-
-              <motion.div
-                className=""
-                initial={{ opacity: 0, y: 50 }}
-                animate={
-                  infoView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-                }
-                transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-              >
-                <h3 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">
-                  <CountUp end={850} duration={2} />
-                </h3>
-                <p className="font-sans dark:text-gray-200 text-gray-700 text-lg">
-                  Staff members currently engaged
-                </p>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section> */}
         <section
           id="programs"
           className="container mx-auto px-4 py-24 overflow-hidden"
@@ -685,7 +603,7 @@ export default function LandingPage() {
             </motion.p>
 
             {/* Badges with float */}
-            <motion.div
+            {/* <motion.div
               className="flex flex-wrap justify-center gap-5 mb-8"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -711,7 +629,7 @@ export default function LandingPage() {
                   {type}
                 </motion.span>
               ))}
-            </motion.div>
+            </motion.div> */}
 
             {/* CTA button */}
             <motion.div
@@ -762,7 +680,7 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base">
-                    DHFMC places education at the core of its vision and
+                  DHM places education at the core of its vision and
                     mission, guiding all our actions and decisions...
                   </CardDescription>
                 </CardContent>
@@ -1030,7 +948,7 @@ export default function LandingPage() {
                     </div>
                   </div>
                   <p className="text-blue-600 hover:text-gray-400">
-                    Excellence in medical education since 1985.
+                    Excellence in medical education since 2017.
                   </p>
                 </div>
                 <div>
@@ -1116,9 +1034,7 @@ export default function LandingPage() {
               </div>
               <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>
-                  &copy; 2024 DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE
- für Medizin College. All
-                  rights reserved.
+                  &copy; 2024 DEUTSCHE HOCHSCHULE FÜR MEDIZIN COLLEGE. All rights reserved.
                 </p>
               </div>
             </div>
