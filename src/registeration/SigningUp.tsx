@@ -24,11 +24,11 @@ export default function SignInPage() {
   // State to capture user input
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState<string | null>(null);
   const [error, setError] = useState(null);
 
   // Submit handler
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const formData = {
@@ -37,15 +37,15 @@ export default function SignInPage() {
     };
 
     try {
-      const responses = await apiService.post(endPoints.login, formData, {
+      const responses: any = await apiService.post(endPoints.login, formData, {
         headers: { requiresAuth: false },
       });
-      setResponse(responses.message);
+      setResponse(responses?.message ?? null);
       console.log(responses);
       // localStorage.setItem("xy9a7b", response.data.jwt);
 
       // Navigate based on role from backend
-      switch (responses.role) {
+      switch (responses?.role) {
         case "REGISTRAR":
           navigate("/registrar");
           break;
@@ -56,11 +56,11 @@ export default function SignInPage() {
           navigate("/dean");
           break;
         default:
-          console.log("Role not handled:", response.role);
+          console.log("Role not handled:", responses?.role);
       }
-    } catch (err) {
+    } catch (err: any) {
       setError(err?.response?.data?.error || "failed to login");
-      console.log(err.response.data.error);
+      console.log(err?.response?.data?.error);
       console.error("Error:", err);
     }
   };
